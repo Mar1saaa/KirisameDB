@@ -2,7 +2,7 @@
 // ensure the allocated memory is contiguous, enhancing cache locality
 #include "util/arena.h"
 
-namespace leveldb {
+namespace kirisamedb {
 
     Arena::Arena() : alloc_ptr_(nullptr), alloc_bytes_remaining_(0), memory_usage_(0) {}
     Arena::~Arena() {
