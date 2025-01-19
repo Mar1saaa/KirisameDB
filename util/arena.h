@@ -1,4 +1,4 @@
-#ifdef STORAGE_UTIL_ARENA_H_
+#ifndef STORAGE_UTIL_ARENA_H_
 #define STORAGE_UTIL_ARENA_H_
 
 #include <atomic>
@@ -7,14 +7,13 @@
 #include <cstdint>
 #include <vector>
 
-namespame kirisamedb {
+namespace kirisamedb {
   class Arena {
   public:
     Arena();
     ~Arena();
     Arena(const Arena &) = delete; // Disable Copy Constructor
-    Arena &
-    operator=(const Arena &) = delete; // Disable shallow copy of operator=
+    Arena& operator=(const Arena &) = delete; // Disable shallow copy of operator=
 
     // Return a pointer to a newly allocated memory block of "bytes" bytes.
     char *Allocate(size_t bytes);

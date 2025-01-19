@@ -1,11 +1,11 @@
-#ifndef STORAGE_DB_LOG_WRITER_H_
-#define STORAGE_DB_LOG_WRITER_H_
+#ifndef STORAGE_LOG_WRITER_H_
+#define STORAGE_LOG_WRITER_H_
 
 #include <cstdint>
 
 #include "log_format.h"
-#include "slice.h"
-#include "status.h"
+#include "../include/slice.h"
+#include "../include/status.h"
 
 namespace kirisamedb {
 class WritableFile;
@@ -44,4 +44,4 @@ class Writer {
 }  // namespace log
 }  // namespace kirisamedb
 
-#endif  // STORAGE_DB_LOG_WRITER_H_
+#endif  // STORAGE_LOG_WRITER_H_

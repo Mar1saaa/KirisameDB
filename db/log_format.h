@@ -1,8 +1,8 @@
 // Log format information shared by reader and writer.
 // See ../doc/log_format.md for more detail.
 
-#ifndef STORAGE_DB_LOG_FORMAT_H_
-#define STORAGE_DB_LOG_FORMAT_H_
+#ifndef STORAGE_LOG_FORMAT_H_
+#define STORAGE_LOG_FORMAT_H_
 
 namespace kirisamedb {
 namespace log {
@@ -26,6 +26,6 @@ static const int kBlockSize = 32768;
 static const int kHeaderSize = 4 + 2 + 1;
 
 }  // namespace log
-}  // namespace leveldb
+}  // namespace kirisamedb
 
-#endif // STORAGE_DB_LOG_FORMAT_H_
+#endif // STORAGE_LOG_FORMAT_H_

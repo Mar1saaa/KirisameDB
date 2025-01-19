@@ -16,10 +16,10 @@
 
 #include <cstdint>
 
-#include "leveldb/export.h"
-#include "leveldb/slice.h"
+#include "export.h"
+#include "slice.h"
 
-namespace leveldb {
+namespace kirisamedb {
 
 class EXPORT Cache;
 
@@ -50,8 +50,7 @@ class EXPORT Cache {
   //
   // When the inserted entry is no longer needed, the key and
   // value will be passed to "deleter".
-  virtual Handle* Insert(const Slice& key, void* value, size_t charge,
-                         void (*deleter)(const Slice& key, void* value)) = 0;
+  virtual Handle* Insert(const Slice& key, void* value, size_t charge, void (*deleter)(const Slice& key, void* value)) = 0;
 
   // If the cache has no mapping for "key", returns nullptr.
   //
@@ -86,7 +85,7 @@ class EXPORT Cache {
   // applications may wish to call this method to reduce memory usage.
   // Default implementation of Prune() does nothing.  Subclasses are strongly
   // encouraged to override the default implementation.  A future release of
-  // leveldb may change Prune() to a pure abstract method.
+  // kirisamedb may change Prune() to a pure abstract method.
   virtual void Prune() {}
 
   // Return an estimate of the combined charges of all elements stored in the
@@ -94,6 +93,6 @@ class EXPORT Cache {
   virtual size_t TotalCharge() const = 0;
 };
 
-}  // namespace leveldb
+}  // namespace kirisamedb
 
 #endif  // STORAGE_INCLUDE_CACHE_H_

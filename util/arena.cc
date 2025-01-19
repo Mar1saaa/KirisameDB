@@ -1,6 +1,6 @@
 // A memory pool reduce the overload caused by frequent calls to malloc/free
 // ensure the allocated memory is contiguous, enhancing cache locality
-#include "util/arena.h"
+#include "arena.h"
 
 namespace kirisamedb {
 
@@ -56,4 +56,4 @@ namespace kirisamedb {
         memory_usage_.fetch_add(block_bytes + sizeof(char*), std::memory_order_relaxed);
         return result;
     }
-}  // namespace leveldb
+}  // namespace
