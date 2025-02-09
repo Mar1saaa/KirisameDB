@@ -21,13 +21,13 @@
 
 namespace kirisamedb {
 
-class EXPORT Cache;
+class DB_EXPORT Cache;
 
 // Create a new cache with a fixed size capacity.  This implementation
 // of Cache uses a least-recently-used eviction policy.
-EXPORT Cache* NewLRUCache(size_t capacity);
+DB_EXPORT Cache* NewLRUCache(size_t capacity);
 
-class EXPORT Cache {
+class DB_EXPORT Cache {
  public:
   Cache() = default;
 

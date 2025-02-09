@@ -20,7 +20,7 @@
 
 namespace kirisamedb {
 
-class KIRISAMEDB_EXPORT Slice {
+class DB_EXPORT Slice {
  public:
   // Create an empty slice.
   Slice() : data_(""), size_(0) {}

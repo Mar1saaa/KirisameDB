@@ -17,7 +17,7 @@
 
 namespace kirisamedb {
 
-class KIRISAMEDB_EXPORT Status {
+class DB_EXPORT Status {
  public:
   // Create a success status.
   Status() noexcept : state_(nullptr) {}
