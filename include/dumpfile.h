@@ -16,8 +16,7 @@ namespace kirisamedb {
 //
 // Returns a non-OK result if fname does not name a leveldb storage
 // file, or if the file cannot be read.
-DB_EXPORT Status DumpFile(Env* env, const std::string& fname,
-                               WritableFile* dst);
+DB_EXPORT Status DumpFile(Env* env, const std::string& fname, WritableFile* dst);
 
 }  // namespace kirisamedb
 

@@ -1,5 +1,4 @@
 // Log format information shared by reader and writer.
-// See ../doc/log_format.md for more detail.
 
 #ifndef STORAGE_LOG_FORMAT_H_
 #define STORAGE_LOG_FORMAT_H_

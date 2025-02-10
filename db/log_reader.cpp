@@ -29,10 +29,9 @@ bool Reader::SkipToInitialBlock() {
   const size_t offset_in_block = initial_offset_ % kBlockSize;
   uint64_t block_start_location = initial_offset_ - offset_in_block;
 
-  // Don't search a block if we'd be in the trailer
   if (offset_in_block > kBlockSize - 6) {
     block_start_location += kBlockSize;
-  }
+  }// 跳过尾部填充字块
 
   end_of_buffer_offset_ = block_start_location;
 

@@ -64,7 +64,7 @@ Status Writer::AddRecord(const Slice& slice) {
       type = kMiddleType;
     }
 
-    s = EmitPhysicalRecord(type, next, fragment_length); // 实际内存操作
+    s = EmitPhysicalRecord(type, next, fragment_length);
     next += fragment_length;
     left -= fragment_length;
     begin = false; // 离开第一次do while后，begin和end肯定不在一个block了
@@ -78,16 +78,16 @@ Status Writer::EmitPhysicalRecord(RecordType t, const char* ptr, size_t length) 
 
   // Format the header
   char buf[kHeaderSize];
-  buf[4] = static_cast<char>(length & 0xff); // checksum
-  buf[5] = static_cast<char>(length >> 8); // length
+  buf[4] = static_cast<char>(length & 0xff); // length的高8位
+  buf[5] = static_cast<char>(length >> 8); // length的低8位
   buf[6] = static_cast<char>(t); // RecordType
 
   // Compute the crc of the record type and the payload.
   uint32_t crc = crc32c::Extend(type_crc_[t], ptr, length);
-  crc = crc32c::Mask(crc);  // Adjust for storage
-  EncodeFixed32(buf, crc);
+  crc = crc32c::Mask(crc);  // Adjust for storage 掩码转换
+  EncodeFixed32(buf, crc); // 将32位的CRC值存储到前8字节
 
-  // Write the header and the payload
+  // 写入头部、数据及Flush持久化
   Status s = dest_->Append(Slice(buf, kHeaderSize));
   if (s.ok()) {
     s = dest_->Append(Slice(ptr, length));

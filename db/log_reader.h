@@ -36,8 +36,7 @@ class Reader {
   //
   // The Reader will start reading at the first record located at physical
   // position >= initial_offset within the file.
-  Reader(SequentialFile* file, Reporter* reporter, bool checksum,
-         uint64_t initial_offset);
+  Reader(SequentialFile* file, Reporter* reporter, bool checksum, uint64_t initial_offset);
 
   Reader(const Reader&) = delete;
   Reader& operator=(const Reader&) = delete;
@@ -69,7 +68,6 @@ class Reader {
   };
 
   // Skips all blocks that are completely before "initial_offset_".
-  //
   // Returns true on success. Handles reporting.
   bool SkipToInitialBlock();
 
