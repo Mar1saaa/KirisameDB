@@ -1,26 +1,4 @@
-// Copyright (c) 2011 The LevelDB Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file. See the AUTHORS file for names of contributors.
-
-#include "cache.h"
-
-#include <cassert>
-#include <cstdio>
-#include <cstdlib>
-
-#include "../port/port.h"
-#include "../port/thread_annotations.h"
-#include "../util/hash.h"
-#include "../util/mutexlock.h"
-
-namespace kirisamedb {
-
-Cache::~Cache() {}
-
-namespace {
-
-// LRU cache implementation
-//
+// 实现LRU Cache
 // Cache entries have an "in_cache" boolean indicating whether the cache has a
 // reference on the entry.  The only ways that this can become false without the
 // entry being passed to its "deleter" are via Erase(), via Insert() when
@@ -40,6 +18,21 @@ namespace {
 
 // An entry is a variable length heap-allocated structure.  Entries
 // are kept in a circular doubly linked list ordered by access time.
+
+#include <cassert>
+#include <cstdio>
+#include <cstdlib>
+
+#include "../include/cache.h"
+#include "../port/port.h"
+#include "../port/thread_annotations.h"
+#include "../util/hash.h"
+#include "../util/mutexlock.h"
+namespace kirisamedb {
+
+Cache::~Cache() {}
+
+namespace {
 struct LRUHandle {
   void* value;
   void (*deleter)(const Slice&, void* value);

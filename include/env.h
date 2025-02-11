@@ -31,7 +31,7 @@
 // independently of whether <windows.h> was included.
 #if defined(DeleteFile)
 #undef DeleteFile
-#define KIRISAMEDB_DELETEFILE_UNDEFINED
+#define DB_DELETEFILE_UNDEFINED
 #endif  // defined(DeleteFile)
 #endif  // defined(_WIN32)
 
@@ -402,12 +402,12 @@ class DB_EXPORT EnvWrapper : public Env {
 
 // This workaround can be removed when kirisamedb::Env::DeleteFile is removed.
 // Redefine DeleteFile if it was undefined earlier.
-#if defined(_WIN32) && defined(KIRISAMEDB_DELETEFILE_UNDEFINED)
+#if defined(_WIN32) && defined(DB_DELETEFILE_UNDEFINED)
 #if defined(UNICODE)
 #define DeleteFile DeleteFileW
 #else
 #define DeleteFile DeleteFileA
 #endif  // defined(UNICODE)
-#endif  // defined(_WIN32) && defined(KIRISAMEDB_DELETEFILE_UNDEFINED)
+#endif  // defined(_WIN32) && defined(DB_DELETEFILE_UNDEFINED)
 
 #endif  // STORAGE_INCLUDE_ENV_H_

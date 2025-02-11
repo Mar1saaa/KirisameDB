@@ -1,5 +1,6 @@
 // A memory pool reduce the overload caused by frequent calls to malloc/free
 // ensure the allocated memory is contiguous, enhancing cache locality
+// 减少频繁调用 malloc/free 造成的开销，并确保分配的内存是连续的，增强缓存局部性
 #include "arena.h"
 
 namespace kirisamedb {
@@ -56,4 +57,4 @@ namespace kirisamedb {
         memory_usage_.fetch_add(block_bytes + sizeof(char*), std::memory_order_relaxed);
         return result;
     }
-}  // namespace
+}  // namespace kirisamedb

@@ -3,24 +3,24 @@
 
 #if !defined(DB_EXPORT)
 
-#if defined(KIRISAMEDB_SHARED_LIBRARY)
+#if defined(DB_SHARED_LIBRARY)
 #if defined(_WIN32)
 
-#if defined(KIRISAMEDB_COMPILE_LIBRARY)
+#if defined(DB_COMPILE_LIBRARY)
 #define DB_EXPORT __declspec(dllexport)
 #else
 #define DB_EXPORT __declspec(dllimport)
-#endif  // defined(KIRISAMEDB_COMPILE_LIBRARY)
+#endif  // defined(DB_COMPILE_LIBRARY)
 
 #else  // defined(_WIN32)
-#if defined(KIRISAMEDB_COMPILE_LIBRARY)
+#if defined(DB_COMPILE_LIBRARY)
 #define DB_EXPORT __attribute__((visibility("default")))
 #else
 #define DB_EXPORT
 #endif
 #endif  // defined(_WIN32)
 
-#else  // defined(KIRISAMEDB_SHARED_LIBRARY)
+#else  // defined(DB_SHARED_LIBRARY)
 #define DB_EXPORT
 #endif
 
