@@ -14,15 +14,14 @@ namespace kirisamedb {
 
     static const int kBlockSize = 4096;
 
-    char* Arena::AllocateFallback(size_t bytes) {
+    char* Arena::AllocateFallback(size_t bytes) {// 内存不足时new block的inpl
         if (bytes > kBlockSize / 4) {
-        // Object is more than a quarter of our block size.  Allocate it separately
-        // to avoid wasting too much space in leftover bytes.
+        // leveldb基于跳表设计data structure，内存的分配非常频繁，大块内存直接new block减少碎片化
         char* result = AllocateNewBlock(bytes);
         return result;
         }
 
-        // We waste the remaining space in the current block.
+        // 需要调用AllocateFallback时，之前的块内存不再使用
         alloc_ptr_ = AllocateNewBlock(kBlockSize);
         alloc_bytes_remaining_ = kBlockSize;
 
