@@ -34,7 +34,7 @@ class DB_EXPORT Slice {
   // Create a slice that refers to s[0,strlen(s)-1]
   Slice(const char* s) : data_(s), size_(strlen(s)) {}
 
-  // Intentionally copyable.
+  // copyable.
   Slice(const Slice&) = default;
   Slice& operator=(const Slice&) = default;
 
@@ -73,10 +73,6 @@ class DB_EXPORT Slice {
   // Return a string that contains the copy of the referenced data.
   std::string ToString() const { return std::string(data_, size_); }
 
-  // Three-way comparison.  Returns value:
-  //   <  0 iff "*this" <  "b",
-  //   == 0 iff "*this" == "b",
-  //   >  0 iff "*this" >  "b"
   int compare(const Slice& b) const;
 
   // Return true iff "x" is a prefix of "*this"
@@ -90,8 +86,7 @@ class DB_EXPORT Slice {
 };
 
 inline bool operator==(const Slice& x, const Slice& y) {
-  return ((x.size() == y.size()) &&
-          (memcmp(x.data(), y.data(), x.size()) == 0));
+  return ((x.size() == y.size()) && (memcmp(x.data(), y.data(), x.size()) == 0));
 }
 
 inline bool operator!=(const Slice& x, const Slice& y) { return !(x == y); }

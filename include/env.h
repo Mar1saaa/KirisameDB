@@ -1,4 +1,4 @@
-// An Env is an interface used by the kirisamedb implementation to access
+// An Env is an interface used by the database implementation to access
 // operating system functionality like the filesystem etc.  Callers
 // may wish to provide a custom Env object when opening a database to
 // get fine gain control; e.g., to rate limit file system operations.
@@ -67,8 +67,7 @@ class DB_EXPORT Env {
   // NotFound status when the file does not exist.
   //
   // The returned file will only be accessed by one thread at a time.
-  virtual Status NewSequentialFile(const std::string& fname,
-                                   SequentialFile** result) = 0;
+  virtual Status NewSequentialFile(const std::string& fname, SequentialFile** result) = 0;
 
   // Create an object supporting random-access reads from the file with the
   // specified name.  On success, stores a pointer to the new file in
@@ -78,8 +77,7 @@ class DB_EXPORT Env {
   // not exist.
   //
   // The returned file may be concurrently accessed by multiple threads.
-  virtual Status NewRandomAccessFile(const std::string& fname,
-                                     RandomAccessFile** result) = 0;
+  virtual Status NewRandomAccessFile(const std::string& fname, RandomAccessFile** result) = 0;
 
   // Create an object that writes to a new file with the specified
   // name.  Deletes any existing file with the same name and creates a
@@ -88,8 +86,7 @@ class DB_EXPORT Env {
   // returns non-OK.
   //
   // The returned file will only be accessed by one thread at a time.
-  virtual Status NewWritableFile(const std::string& fname,
-                                 WritableFile** result) = 0;
+  virtual Status NewWritableFile(const std::string& fname, WritableFile** result) = 0;
 
   // Create an object that either appends to an existing file, or
   // writes to a new file (if the file does not exist to begin with).
@@ -103,8 +100,7 @@ class DB_EXPORT Env {
   // not allow appending to an existing file.  Users of Env (including
   // the kirisamedb implementation) must be prepared to deal with
   // an Env that does not support appending.
-  virtual Status NewAppendableFile(const std::string& fname,
-                                   WritableFile** result);
+  virtual Status NewAppendableFile(const std::string& fname, WritableFile** result);
 
   // Returns true iff the named file exists.
   virtual bool FileExists(const std::string& fname) = 0;
@@ -112,8 +108,7 @@ class DB_EXPORT Env {
   // Store in *result the names of the children of the specified directory.
   // The names are relative to "dir".
   // Original contents of *results are dropped.
-  virtual Status GetChildren(const std::string& dir,
-                             std::vector<std::string>* result) = 0;
+  virtual Status GetChildren(const std::string& dir, std::vector<std::string>* result) = 0;
   // Delete the named file.
   //
   // The default implementation calls DeleteFile, to support legacy Env
@@ -161,8 +156,7 @@ class DB_EXPORT Env {
   virtual Status GetFileSize(const std::string& fname, uint64_t* file_size) = 0;
 
   // Rename file src to target.
-  virtual Status RenameFile(const std::string& src,
-                            const std::string& target) = 0;
+  virtual Status RenameFile(const std::string& src, const std::string& target) = 0;
 
   // Lock the specified file.  Used to prevent concurrent access to
   // the same db by multiple processes.  On failure, stores nullptr in
