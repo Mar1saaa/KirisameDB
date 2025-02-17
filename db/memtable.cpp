@@ -6,12 +6,12 @@
 
 namespace kirisamedb {
 
-static Slice GetLengthPrefixedSlice(const char* data) {
+static Slice GetLengthPrefixedSlice(const char* data) {// static封装,仅供memtable.cpp使用
   uint32_t len;
   const char* p = data;
-  p = GetVarint32Ptr(p, p + 5, &len);  // +5: we assume "p" is not corrupted
+  p = GetVarint32Ptr(p, p + 5, &len);// 32-bit的Varint最多占5字节，+5确保不越界
   return Slice(p, len);
-}
+}// 可以当作Varint编码的前缀长度的字符串的解码器，解码后，Slice从key变为(key, value)
 
 MemTable::MemTable(const InternalKeyComparator& comparator)
     : comparator_(comparator), refs_(0), table_(comparator_, &arena_) {}
@@ -27,15 +27,12 @@ int MemTable::KeyComparator::operator()(const char* aptr, const char* bptr) cons
   return comparator.Compare(a, b);
 }
 
-// Encode a suitable internal key target for "target" and return it.
-// Uses *scratch as scratch space, and the returned pointer will point
-// into this scratch space.
-static const char* EncodeKey(std::string* scratch, const Slice& target) {
+static const char* EncodeKey(std::string* scratch, const Slice& target) {// static封装作用同上
   scratch->clear();
   PutVarint32(scratch, target.size());
   scratch->append(target.data(), target.size());
   return scratch->data();
-}
+}// 可以看作编码器，将Slice编码为string完成转换
 
 class MemTableIterator : public Iterator {
  public:
@@ -80,15 +77,15 @@ void MemTable::Add(SequenceNumber s, ValueType type, const Slice& key, const Sli
   const size_t encoded_len = VarintLength(internal_key_size) + internal_key_size
                                             + VarintLength(val_size) + val_size;
   char* buf = arena_.Allocate(encoded_len);
-  char* p = EncodeVarint32(buf, internal_key_size);
-  std::memcpy(p, key.data(), key_size);
-  p += key_size;
-  EncodeFixed64(p, (s << 8) | type);
-  p += 8;
-  p = EncodeVarint32(p, val_size);
-  std::memcpy(p, value.data(), val_size);
-  assert(p + val_size == buf + encoded_len);
-  table_.Insert(buf);
+  char* header = EncodeVarint32(buf, internal_key_size);
+  std::memcpy(header, key.data(), key_size);// 相比std::string::append(),直接memcpy()性能更好
+  header += key_size;
+  EncodeFixed64(header, (s << 8) | type);
+  header += 8;
+  header = EncodeVarint32(header, val_size);
+  std::memcpy(header, value.data(), val_size);
+  assert(header + val_size == buf + encoded_len);// 分配完毕后，二者内存大小正常情况下一定相等
+  table_.Insert(buf);// table_是个skiplist
 }
 
 bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
