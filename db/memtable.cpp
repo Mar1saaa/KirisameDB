@@ -44,7 +44,7 @@ class MemTableIterator : public Iterator {
   ~MemTableIterator() override = default;
 
   bool Valid() const override { return iter_.Valid(); }
-  void Seek(const Slice& k) override { iter_.Seek(EncodeKey(&tmp_, k)); }
+  void Seek(const Slice& k) override { iter_.Seek(EncodeKey(&pos_, k)); }
   void SeekToFirst() override { iter_.SeekToFirst(); }
   void SeekToLast() override { iter_.SeekToLast(); }
   void Next() override { iter_.Next(); }
@@ -59,7 +59,7 @@ class MemTableIterator : public Iterator {
 
  private:
   MemTable::Table::Iterator iter_;
-  std::string tmp_;  // For passing to EncodeKey
+  std::string pos_;  // For passing to EncodeKey
 };
 
 Iterator* MemTable::NewIterator() { return new MemTableIterator(&table_); }
@@ -77,14 +77,14 @@ void MemTable::Add(SequenceNumber s, ValueType type, const Slice& key, const Sli
   const size_t encoded_len = VarintLength(internal_key_size) + internal_key_size
                                             + VarintLength(val_size) + val_size;
   char* buf = arena_.Allocate(encoded_len);
-  char* header = EncodeVarint32(buf, internal_key_size);
-  std::memcpy(header, key.data(), key_size);// 相比std::string::append(),直接memcpy()性能更好
-  header += key_size;
-  EncodeFixed64(header, (s << 8) | type);
-  header += 8;
-  header = EncodeVarint32(header, val_size);
-  std::memcpy(header, value.data(), val_size);
-  assert(header + val_size == buf + encoded_len);// 分配完毕后，二者内存大小正常情况下一定相等
+  char* pos = EncodeVarint32(buf, internal_key_size);// 用于逐步填充buf
+  std::memcpy(pos, key.data(), key_size);// 相比string::append(),直接memcpy()性能更好
+  pos += key_size;
+  EncodeFixed64(pos, (s << 8) | type);// 左移腾空间，0与type位或结果仍为type
+  pos += 8;
+  pos = EncodeVarint32(pos, val_size);
+  std::memcpy(pos, value.data(), val_size);
+  assert(pos + val_size == buf + encoded_len);// 分配完毕后，二者正常情况下加完一定指向同一地址
   table_.Insert(buf);// table_是个skiplist
 }
 
@@ -106,22 +106,21 @@ bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
     uint32_t key_length;
     const char* key_ptr = GetVarint32Ptr(entry, entry + 5, &key_length);
     if (comparator_.comparator.user_comparator()->Compare(
-            Slice(key_ptr, key_length - 8), key.user_key()) == 0) {
-      // Correct user key
+            Slice(key_ptr, key_length - 8), key.user_key()) == 0) {// key_length包含了key+header
       const uint64_t tag = DecodeFixed64(key_ptr + key_length - 8);
-      switch (static_cast<ValueType>(tag & 0xff)) {
+      switch (static_cast<ValueType>(tag & 0xff)) {// tag与全1位与排除干扰项
         case kTypeValue: {
           Slice v = GetLengthPrefixedSlice(key_ptr + key_length);
           value->assign(v.data(), v.size());
           return true;
         }
-        case kTypeDeletion:
+        case kTypeDeletion: // key被标记为delete
           *s = Status::NotFound(Slice());
           return true;
       }
     }
   }
-  return false;
+  return false;// 不合法/不存在都会return false
 }
 
 }  // namespace kirisamedb

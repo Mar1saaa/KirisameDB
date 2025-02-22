@@ -1,4 +1,4 @@
-// A Cache is an interface that maps keys to values.  It has internal
+// A Cache is an interface that maps keys to values. It has internal
 // synchronization and may be safely accessed concurrently from
 // multiple threads.  It may automatically evict entries to make room
 // for new entries.  Values have a specified charge against the cache
@@ -20,13 +20,6 @@
 #include "slice.h"
 
 namespace kirisamedb {
-
-class DB_EXPORT Cache;
-
-// Create a new cache with a fixed size capacity.  This implementation
-// of Cache uses a least-recently-used eviction policy.
-DB_EXPORT Cache* NewLRUCache(size_t capacity);
-
 class DB_EXPORT Cache {
  public:
   Cache() = default;
@@ -50,7 +43,8 @@ class DB_EXPORT Cache {
   //
   // When the inserted entry is no longer needed, the key and
   // value will be passed to "deleter".
-  virtual Handle* Insert(const Slice& key, void* value, size_t charge, void (*deleter)(const Slice& key, void* value)) = 0;
+  virtual Handle* Insert(const Slice& key, void* value, size_t charge,
+                   void (*deleter)(const Slice& key, void* value)) = 0;
 
   // If the cache has no mapping for "key", returns nullptr.
   //
@@ -92,6 +86,10 @@ class DB_EXPORT Cache {
   // cache.
   virtual size_t TotalCharge() const = 0;
 };
+
+// Create a new cache with a fixed size capacity. This implementation
+// of Cache uses a least-recently-used eviction policy.
+DB_EXPORT Cache* NewLRUCache(size_t capacity);
 
 }  // namespace kirisamedb
 

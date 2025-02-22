@@ -1,4 +1,4 @@
-// Endian-neutral encoding:
+// * Endian-neutral encoding:
 // * Fixed-length numbers are encoded with least-significant byte first
 // * In addition we support variable length "varint" encoding
 // * Strings are encoded prefixed by their length in varint format
@@ -99,10 +99,9 @@ inline uint64_t DecodeFixed64(const char* ptr) {
 }
 
 // Internal routine for use by fallback path of GetVarint32Ptr
-const char* GetVarint32PtrFallback(const char* p, const char* limit,
-                                   uint32_t* value);
-inline const char* GetVarint32Ptr(const char* p, const char* limit,
-                                  uint32_t* value) {
+const char* GetVarint32PtrFallback(const char* p, const char* limit, uint32_t* value);
+
+inline const char* GetVarint32Ptr(const char* p, const char* limit, uint32_t* value) {
   if (p < limit) {
     uint32_t result = *(reinterpret_cast<const uint8_t*>(p));
     if ((result & 128) == 0) {
@@ -113,6 +112,6 @@ inline const char* GetVarint32Ptr(const char* p, const char* limit,
   return GetVarint32PtrFallback(p, limit, value);
 }
 
-}  // namespace leveldb
+}  // namespace kirisamedb
 
-#endif  // STORAGE_LEVELDB_UTIL_CODING_H_
+#endif  // STORAGE_UTIL_CODING_H_

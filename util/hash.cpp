@@ -1,8 +1,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include "util/hash.h"
-#include "util/coding.h"
+#include "hash.h"
+#include "coding.h"
 #include <cstring>
 
 // The FALLTHROUGH_INTENDED macro can be used to annotate implicit fall-through

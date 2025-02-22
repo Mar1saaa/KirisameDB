@@ -7,7 +7,7 @@
 // porting to a new platform, see "port_example.h" for documentation
 // of what the new port_<platform>.h file must provide.
 #if defined(DB_PLATFORM_POSIX) || defined(DB_PLATFORM_WINDOWS)
-#include "port/port_stdcxx.h"
+#include "port_stdcxx.h"
 #elif defined(DB_PLATFORM_CHROMIUM)
 #include "port/port_chromium.h"
 #endif
