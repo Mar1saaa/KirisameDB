@@ -5,13 +5,13 @@
 #include <cstdint>
 #include <string>
 
-#include "include/comparator.h"
-#include "include/db.h"
-#include "include/filter_policy.h"
-#include "include/slice.h"
-#include "include/table_builder.h"
-#include "util/coding.h"
-#include "util/logging.h"
+#include "../include/comparator.h"
+#include "../include/db.h"
+#include "../include/filter_policy.h"
+#include "../include/slice.h"
+#include "../include/table_builder.h"
+#include "../util/coding.h"
+#include "../util/logging.h"
 
 namespace kirisamedb {
 
