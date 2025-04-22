@@ -38,7 +38,7 @@ char* EncodeVarint32(char* dst, uint32_t v) {
     *(ptr++) = (v >> 14) | B;
     *(ptr++) = (v >> 21) | B;
     *(ptr++) = v >> 28;
-  }
+  }// adjust bytes with v values
   return reinterpret_cast<char*>(ptr);
 }
 
@@ -77,7 +77,7 @@ int VarintLength(uint64_t v) {
     len++;
   }
   return len;
-}
+} // use how much bytes
 
 const char* GetVarint32PtrFallback(const char* p, const char* limit, uint32_t* value) {
   uint32_t result = 0;

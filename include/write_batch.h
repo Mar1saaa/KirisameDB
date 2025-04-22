@@ -18,8 +18,8 @@
 // non-const method, all threads accessing the same WriteBatch must use
 // external synchronization.
 
-#ifndef STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
-#define STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
+#ifndef STORAGE_INCLUDE_WRITE_BATCH_H_
+#define STORAGE_INCLUDE_WRITE_BATCH_H_
 
 #include <string>
 
@@ -80,4 +80,4 @@ class DB_EXPORT WriteBatch {
 
 }  // namespace kirisamedb
 
-#endif  // STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
+#endif  // STORAGE_INCLUDE_WRITE_BATCH_H_

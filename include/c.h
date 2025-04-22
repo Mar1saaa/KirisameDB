@@ -10,8 +10,7 @@
   Some conventions:
 
   (1) We expose just opaque struct pointers and functions to clients.
-  This allows us to change internal representations without having to
-  recompile clients.
+   recompile clients.
 
   (2) For simplicity, there is no equivalent to the Slice type.  Instead,
   the caller has to pass the pointer and length as separate

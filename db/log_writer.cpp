@@ -37,12 +37,12 @@ Status Writer::AddRecord(const Slice& slice) {
   do {
     const int leftover = kBlockSize - block_offset_;
     assert(leftover >= 0);
-    if (leftover < kHeaderSize) { // 剩余空间连头部都放不下时，就该new一个block了
+    if (leftover < kHeaderSize) {
       if (leftover > 0) {
         // Fill the trailer (literal below relies on kHeaderSize being 7)
         static_assert(kHeaderSize == 7, "");
         dest_->Append(Slice("\x00\x00\x00\x00\x00\x00", leftover));
-      }
+      } // avoid just write a head
       block_offset_ = 0;
     }
 
@@ -67,7 +67,7 @@ Status Writer::AddRecord(const Slice& slice) {
     s = EmitPhysicalRecord(type, next, fragment_length);
     next += fragment_length;
     left -= fragment_length;
-    begin = false; // 离开第一次do while后，begin和end肯定不在一个block了
+    begin = false; // not in a single block
   } while (s.ok() && left > 0);
   return s;
 }
@@ -85,7 +85,7 @@ Status Writer::EmitPhysicalRecord(RecordType t, const char* ptr, size_t length) 
   // Compute the crc of the record type and the payload.
   uint32_t crc = crc32c::Extend(type_crc_[t], ptr, length);
   crc = crc32c::Mask(crc);  // Adjust for storage 掩码转换
-  EncodeFixed32(buf, crc); // 将32位的CRC值存储到前8字节
+  EncodeFixed32(buf, crc); // 将32位的CRC值存储到前4字节
 
   // 写入头部、数据及Flush持久化
   Status s = dest_->Append(Slice(buf, kHeaderSize));
