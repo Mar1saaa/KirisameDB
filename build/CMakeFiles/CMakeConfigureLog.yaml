@@ -1,0 +1,1057 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 5.15.0-97-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/3.31.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/3.31.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e273d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e273d.dir/build.make CMakeFiles/cmTC_e273d.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn'
+        Building C object CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o
+        /usr/bin/gcc   -v -o CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -c /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e273d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5INPQf.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o /tmp/cc5INPQf.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e273d
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e273d.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e273d' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e273d.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxXBicJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e273d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxXBicJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e273d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e273d' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e273d.'
+        /usr/bin/gcc  -v -Wl,-v CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -o cmTC_e273d
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e273d/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e273d.dir/build.make CMakeFiles/cmTC_e273d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-TpXTZn']
+        ignore line: [Building C object CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/gcc   -v -o CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -c /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e273d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5INPQf.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o /tmp/cc5INPQf.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e273d]
+        ignore line: [/home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e273d.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e273d' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e273d.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxXBicJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e273d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxXBicJ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e273d] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxXBicJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e273d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e273d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b50a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5b50a.dir/build.make CMakeFiles/cmTC_5b50a.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2'
+        Building CXX object CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/g++   -v -o CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -c /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5b50a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXqjXsC.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXqjXsC.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5b50a
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b50a.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b50a.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpC2K2P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b50a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpC2K2P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b50a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b50a.'
+        /usr/bin/g++  -v -Wl,-v CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5b50a
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b50a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5b50a.dir/build.make CMakeFiles/cmTC_5b50a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-um4nY2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -c /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5b50a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXqjXsC.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXqjXsC.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5b50a]
+        ignore line: [/home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b50a.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b50a.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpC2K2P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b50a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpC2K2P.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5b50a] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpC2K2P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b50a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_5b50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:34 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c44b9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c44b9.dir/build.make CMakeFiles/cmTC_c44b9.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54'
+        Building C object CMakeFiles/cmTC_c44b9.dir/CheckIncludeFile.c.o
+        /usr/bin/gcc   -std=c11 -o CMakeFiles/cmTC_c44b9.dir/CheckIncludeFile.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54/CheckIncludeFile.c
+        Linking C executable cmTC_c44b9
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c44b9.dir/link.txt --verbose=1
+        /usr/bin/gcc CMakeFiles/cmTC_c44b9.dir/CheckIncludeFile.c.o -o cmTC_c44b9
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-VA4J54'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:37 (check_library_exists)"
+    checks:
+      - "Looking for crc32c_value in crc32c"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_CRC32C"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0b3f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0b3f8.dir/build.make CMakeFiles/cmTC_0b3f8.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w'
+        Building C object CMakeFiles/cmTC_0b3f8.dir/CheckFunctionExists.c.o
+        /usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=crc32c_value -std=c11 -o CMakeFiles/cmTC_0b3f8.dir/CheckFunctionExists.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w/CheckFunctionExists.c
+        Linking C executable cmTC_0b3f8
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b3f8.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -lcrc32c: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=crc32c_value CMakeFiles/cmTC_0b3f8.dir/CheckFunctionExists.c.o -o cmTC_0b3f8  -lcrc32c
+        gmake[1]: *** [CMakeFiles/cmTC_0b3f8.dir/build.make:102: cmTC_0b3f8] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-mygP2w'
+        gmake: *** [Makefile:134: cmTC_0b3f8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:38 (check_library_exists)"
+    checks:
+      - "Looking for snappy_compress in snappy"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SNAPPY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c80a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c80a.dir/build.make CMakeFiles/cmTC_1c80a.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P'
+        Building C object CMakeFiles/cmTC_1c80a.dir/CheckFunctionExists.c.o
+        /usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=snappy_compress -std=c11 -o CMakeFiles/cmTC_1c80a.dir/CheckFunctionExists.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P/CheckFunctionExists.c
+        Linking C executable cmTC_1c80a
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c80a.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -lsnappy: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=snappy_compress CMakeFiles/cmTC_1c80a.dir/CheckFunctionExists.c.o -o cmTC_1c80a  -lsnappy
+        gmake[1]: *** [CMakeFiles/cmTC_1c80a.dir/build.make:102: cmTC_1c80a] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-AZBL6P'
+        gmake: *** [Makefile:134: cmTC_1c80a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:39 (check_library_exists)"
+    checks:
+      - "Looking for zstd_compress in zstd"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ZSTD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4010b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4010b.dir/build.make CMakeFiles/cmTC_4010b.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn'
+        Building C object CMakeFiles/cmTC_4010b.dir/CheckFunctionExists.c.o
+        /usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=zstd_compress -std=c11 -o CMakeFiles/cmTC_4010b.dir/CheckFunctionExists.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn/CheckFunctionExists.c
+        Linking C executable cmTC_4010b
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4010b.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -lzstd: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=zstd_compress CMakeFiles/cmTC_4010b.dir/CheckFunctionExists.c.o -o cmTC_4010b  -lzstd
+        gmake[1]: *** [CMakeFiles/cmTC_4010b.dir/build.make:102: cmTC_4010b] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-yitAPn'
+        gmake: *** [Makefile:134: cmTC_4010b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:40 (check_library_exists)"
+    checks:
+      - "Looking for malloc in tcmalloc"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TCMALLOC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_faa38/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_faa38.dir/build.make CMakeFiles/cmTC_faa38.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu'
+        Building C object CMakeFiles/cmTC_faa38.dir/CheckFunctionExists.c.o
+        /usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=malloc -std=c11 -o CMakeFiles/cmTC_faa38.dir/CheckFunctionExists.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘malloc’; expected ‘void *(long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu/CheckFunctionExists.c:1:1: note: ‘malloc’ is declared in header ‘<stdlib.h>’
+          +++ |+#include <stdlib.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_faa38
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faa38.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -ltcmalloc: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=malloc CMakeFiles/cmTC_faa38.dir/CheckFunctionExists.c.o -o cmTC_faa38  -ltcmalloc
+        gmake[1]: *** [CMakeFiles/cmTC_faa38.dir/build.make:102: cmTC_faa38] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-h8Rfyu'
+        gmake: *** [Makefile:134: cmTC_faa38/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:48 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for fdatasync"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FDATASYNC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9d24/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b9d24.dir/build.make CMakeFiles/cmTC_b9d24.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC'
+        Building CXX object CMakeFiles/cmTC_b9d24.dir/CheckSymbolExists.cxx.o
+        /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_b9d24.dir/CheckSymbolExists.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_b9d24
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9d24.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_b9d24.dir/CheckSymbolExists.cxx.o -o cmTC_b9d24
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-sSC4zC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:49 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for F_FULLFSYNC"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FULLFSYNC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96433/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96433.dir/build.make CMakeFiles/cmTC_96433.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ'
+        Building CXX object CMakeFiles/cmTC_96433.dir/CheckSymbolExists.cxx.o
+        /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_96433.dir/CheckSymbolExists.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ/CheckSymbolExists.cxx
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ/CheckSymbolExists.cxx:8:19: error: ‘F_FULLFSYNC’ was not declared in this scope
+            8 |   return ((int*)(&F_FULLFSYNC))[argc];
+              |                   ^~~~~~~~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_96433.dir/build.make:81: CMakeFiles/cmTC_96433.dir/CheckSymbolExists.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-wsgAoJ'
+        gmake: *** [Makefile:134: cmTC_96433/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:50 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for O_CLOEXEC"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_O_CLOEXEC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26c16/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26c16.dir/build.make CMakeFiles/cmTC_26c16.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr'
+        Building CXX object CMakeFiles/cmTC_26c16.dir/CheckSymbolExists.cxx.o
+        /usr/bin/g++   -std=c++11 -o CMakeFiles/cmTC_26c16.dir/CheckSymbolExists.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_26c16
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26c16.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_26c16.dir/CheckSymbolExists.cxx.o -o cmTC_26c16
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aYzCLr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:79 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CLANG_THREAD_SAFETY"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fno-exceptions -fno-rtti"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_CLANG_THREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b782c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b782c.dir/build.make CMakeFiles/cmTC_b782c.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP'
+        Building CXX object CMakeFiles/cmTC_b782c.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_CLANG_THREAD_SAFETY  -fno-exceptions -fno-rtti  -std=c++11   -Wthread-safety -o CMakeFiles/cmTC_b782c.dir/src.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP/src.cxx
+        g++: error: unrecognized command-line option '-Wthread-safety'
+        gmake[1]: *** [CMakeFiles/cmTC_b782c.dir/build.make:81: CMakeFiles/cmTC_b782c.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-kIGPrP'
+        gmake: *** [Makefile:134: cmTC_b782c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:82 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test KIRISAMEDB_HAVE_NO_MISSING_FIELD_INITIALIZERS"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fno-exceptions -fno-rtti"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "KIRISAMEDB_HAVE_NO_MISSING_FIELD_INITIALIZERS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa5e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa5e9.dir/build.make CMakeFiles/cmTC_aa5e9.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE'
+        Building CXX object CMakeFiles/cmTC_aa5e9.dir/src.cxx.o
+        /usr/bin/g++ -DKIRISAMEDB_HAVE_NO_MISSING_FIELD_INITIALIZERS  -fno-exceptions -fno-rtti  -std=c++11   -Wno-missing-field-initializers -o CMakeFiles/cmTC_aa5e9.dir/src.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE/src.cxx
+        Linking CXX executable cmTC_aa5e9
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa5e9.dir/link.txt --verbose=1
+        /usr/bin/g++  -fno-exceptions -fno-rtti  CMakeFiles/cmTC_aa5e9.dir/src.cxx.o -o cmTC_aa5e9
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-zWiHuE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:88 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_CXX17_HAS_INCLUDE"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fno-exceptions -fno-rtti"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_CXX17_HAS_INCLUDE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9cece/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9cece.dir/build.make CMakeFiles/cmTC_9cece.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63'
+        Building CXX object CMakeFiles/cmTC_9cece.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_CXX17_HAS_INCLUDE  -fno-exceptions -fno-rtti  -std=c++11 -o CMakeFiles/cmTC_9cece.dir/src.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63/src.cxx
+        Linking CXX executable cmTC_9cece
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cece.dir/link.txt --verbose=1
+        /usr/bin/g++  -fno-exceptions -fno-rtti  CMakeFiles/cmTC_9cece.dir/src.cxx.o -o cmTC_9cece
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-RLkp63'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:281 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wstrict-prototypes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_135c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_135c3.dir/build.make CMakeFiles/cmTC_135c3.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc'
+        Building C object CMakeFiles/cmTC_135c3.dir/src.c.o
+        /usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -Wstrict-prototypes  -std=c11 -o CMakeFiles/cmTC_135c3.dir/src.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc/src.c
+        Linking C executable cmTC_135c3
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_135c3.dir/link.txt --verbose=1
+        /usr/bin/gcc  -Wstrict-prototypes  CMakeFiles/cmTC_135c3.dir/src.c.o -o cmTC_135c3
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-aHa1Pc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:440 (check_library_exists)"
+    checks:
+      - "Looking for sqlite3_open in sqlite3"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wstrict-prototypes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SQLITE3"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f9bc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2f9bc.dir/build.make CMakeFiles/cmTC_2f9bc.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn'
+        Building C object CMakeFiles/cmTC_2f9bc.dir/CheckFunctionExists.c.o
+        /usr/bin/gcc   -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open -std=c11 -o CMakeFiles/cmTC_2f9bc.dir/CheckFunctionExists.c.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn/CheckFunctionExists.c
+        Linking C executable cmTC_2f9bc
+        /home/lizhuangyan/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f9bc.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -lsqlite3: No such file or directory
+        collect2: error: ld returned 1 exit status
+        /usr/bin/gcc  -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open CMakeFiles/cmTC_2f9bc.dir/CheckFunctionExists.c.o -o cmTC_2f9bc  -lsqlite3
+        gmake[1]: *** [CMakeFiles/cmTC_2f9bc.dir/build.make:102: cmTC_2f9bc] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-cOhvwn'
+        gmake: *** [Makefile:134: cmTC_2f9bc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/lizhuangyan/cmake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:451 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_KYOTOCABINET"
+    directories:
+      source: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA"
+      binary: "/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fno-exceptions -fno-rtti"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_KYOTOCABINET"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA'
+        
+        Run Build Command(s): /home/lizhuangyan/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43241/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_43241.dir/build.make CMakeFiles/cmTC_43241.dir/build
+        gmake[1]: Entering directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA'
+        Building CXX object CMakeFiles/cmTC_43241.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_KYOTOCABINET  -fno-exceptions -fno-rtti  -std=c++11 -o CMakeFiles/cmTC_43241.dir/src.cxx.o -c /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA/src.cxx
+        /home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA/src.cxx:2:10: fatal error: kcpolydb.h: No such file or directory
+            2 | #include <kcpolydb.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_43241.dir/build.make:81: CMakeFiles/cmTC_43241.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lizhuangyan/KirisameDB/build/CMakeFiles/CMakeScratch/TryCompile-GGsTsA'
+        gmake: *** [Makefile:134: cmTC_43241/fast] Error 2
+        
+      exitCode: 2
+...

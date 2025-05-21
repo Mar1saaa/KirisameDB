@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 # Keep the version below in sync with the one in db.h
-project(kirisamedb VERSION 1.23.0 LANGUAGES C CXX)
+project(kirisamedb VERSION 1.0 LANGUAGES C CXX)
 
 # C standard can be overridden when this is used as a sub-project.
 if(NOT CMAKE_C_STANDARD)
@@ -92,7 +92,7 @@ check_cxx_source_compiles("
 int main() { std::string str; return 0; }
 " HAVE_CXX17_HAS_INCLUDE)
 
-set(KIRISAMEDB_PUBLIC_INCLUDE_DIR "include/kirisamedb")
+set(KIRISAMEDB_PUBLIC_INCLUDE_DIR "include")
 set(KIRISAMEDB_PORT_CONFIG_DIR "port")
 
 configure_file(
